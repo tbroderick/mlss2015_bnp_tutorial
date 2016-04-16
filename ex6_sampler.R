@@ -39,7 +39,7 @@ ex6_gen_data <- function(Ndata, sd) {
 	# matrix of cluster centers: one in each quadrant
 	mu = matrix(c(3,3, -3,3, 3,-3, -3,-3), ncol=2, byrow=TRUE)
 	# vector of component frequencies
-	rho = c(0.5,0.3,0.2,0.1)
+	rho = c(0.4,0.3,0.2,0.1)
 
 	# assign each data point to a component
 	z = sample(1:length(rho), Ndata, replace=TRUE, prob=rho)
